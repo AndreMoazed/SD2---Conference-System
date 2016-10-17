@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Andre Moazed - 40216327
+//This class is the implementation of the attendee class variables, also the main window for the GUI
+//10-10-16
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

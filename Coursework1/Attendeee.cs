@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Andre Moazed - 40216327
+//Used as a substitue for the UML diagram so that I won't get lots of code I wont use in my actual attendee class
+//10-10-16
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

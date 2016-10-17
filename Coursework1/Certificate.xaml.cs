@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Andre Moazed - 40216327
+//The initialization of the certificate window GUI
+//10-10-16
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

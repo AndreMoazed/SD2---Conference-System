@@ -1,11 +1,15 @@
-﻿using System;
+﻿//Andre Moazed - 40216327
+//declaring variables for an instance of attendee, also contains GetCost() method used for caluculating price that need to be paid by an attendee
+//10-10-16
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace Coursework1
 {
-    public class Attendee : Person
+    public class Attendee : Person                      //inherits from parent class "Person"
     {
         private int attendeeRef;                        //declaring private variables and setting them equal empty
         private string institutionName;

@@ -28,3 +28,6 @@ C:\Users\Andre Moazed\Desktop\Year 2\Software Development 2\40216327\Coursework1
 C:\Users\Andre Moazed\Desktop\Year 2\Software Development 2\40216327\Coursework1\obj\Debug\Invoice.g.cs
 C:\Users\Andre Moazed\Desktop\Year 2\Software Development 2\40216327\Coursework1\obj\Debug\Certificate.baml
 C:\Users\Andre Moazed\Desktop\Year 2\Software Development 2\40216327\Coursework1\obj\Debug\Certificate.g.cs
+C:\Users\Andre Moazed\Desktop\Year 2\Software Development 2\cw1\Coursework1\bin\Debug\Coursework1.exe.config
+C:\Users\Andre Moazed\Desktop\Year 2\Software Development 2\cw1\Coursework1\obj\Debug\Coursework1.exe
+C:\Users\Andre Moazed\Desktop\Year 2\Software Development 2\cw1\Coursework1\obj\Debug\Coursework1.pdb
