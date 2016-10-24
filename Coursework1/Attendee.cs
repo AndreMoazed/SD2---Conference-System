@@ -1,6 +1,6 @@
 ﻿//Andre Moazed - 40216327
 //declaring variables for an instance of attendee, also contains GetCost() method used for caluculating price that need to be paid by an attendee
-//10-10-16
+//24-10-16
 
 using System;
 using System.Collections.Generic;
@@ -13,6 +13,7 @@ namespace Coursework1
     {
         private int attendeeRef;                        //declaring private variables and setting them equal empty
         private string institutionName;
+        private string institutionPost;
         private string conferenceName;
         private string registrationType;
         private string paperTitle;
@@ -20,6 +21,7 @@ namespace Coursework1
         private bool presenter;
 
         public Institution insitutionName = new Institution();      //creating an instance of institution
+        public Institution institutionPostcode = new Institution();
 
         public int AttedeeRef 
         {                                     //creating public variables with get and set methods
@@ -29,18 +31,40 @@ namespace Coursework1
             }
             set
             {
-                if(value >= 40000 && value <= 60000)
+                if(value >= 40000 && value <= 60000)                //ensure that value is between 40000 and 60000
                 {
                     attendeeRef = value;
                 }
                 else
                 {
-                    throw new ArgumentException("Attendee Reference must be between 40000 and 60000.");
+                    throw new ArgumentException("Attendee Reference must be between 40000 and 60000.");     //error message displayed 
                 }
             }    
         }                          
 
-        public string InstitutionName { get; set; }
+        public string InstitutionName
+        {
+            get
+            {
+                return institutionName;
+            }
+            set
+            {
+                institutionName = value;
+            }
+        }
+
+        public string InstitutionPost
+        {
+            get
+            {
+                return institutionPost;
+            }
+            set
+            {
+                institutionPost = value;
+            }
+        }
         
         public string ConferenceName 
         {
@@ -60,6 +84,7 @@ namespace Coursework1
                 }
             }
         }
+
         public string RegistrationType
         {
             get
@@ -78,6 +103,7 @@ namespace Coursework1
                 }
             }
         }
+
         public string PaperTitle
         {
             get
@@ -86,22 +112,44 @@ namespace Coursework1
             }
             set
             {
-                if(presenter == true && paperTitle == "")
-                {
-                    paperTitle = value;
-                }
-                else if(presenter == false && paperTitle != "")
-                {
-                    paperTitle = value;
-                }
-                else
+                if(value == "" && presenter)
                 {
                     throw new ArgumentException("Presenters should have a Paper Title and if you have a Paper Title you must also be a presenter.");
                 }
+                else if(value != "" && !presenter)
+                {
+                    throw new ArgumentException("Presenters should have a Paper Title and if you have a Paper Title you must also be a presenter.");
+                }
+                else
+                {
+                    paperTitle = value;
+                }
             }
         }
-        public bool Paid { get; set; }
-        public bool Presenter { get; set; }
+
+        public bool Paid
+        {
+            get
+            {
+                return paid;
+            }
+            set
+            {
+                paid = value;
+            }
+        }
+
+        public bool Presenter 
+        { 
+            get
+            {
+                return presenter;
+            }
+            set
+            {
+                presenter = value;
+            }
+        }
 
         public double GetCost()
         {

@@ -1,6 +1,6 @@
 ﻿//Andre Moazed - 40216327
 //This class is the implementation of the attendee class variables, also the main window for the GUI
-//10-10-16
+//24-10-16
 
 using System;
 using System.Collections.Generic;
@@ -65,6 +65,7 @@ namespace Coursework1
             }
             
             conAttendee.InstitutionName = txtBox_InstitutionName.Text;
+            conAttendee.InstitutionPost = txtBox_Postcode.Text;
             
             try
             {
@@ -86,14 +87,7 @@ namespace Coursework1
 
             conAttendee.Paid = checkBox_Paid.IsChecked.Value;
 
-            try
-            {
-                conAttendee.Presenter = checkBox_Presenter.IsChecked.Value;             //Checking if the value in the check box is true (checked) or false (unchecked)
-            }
-            catch (Exception excep)
-            {
-                MessageBox.Show(excep.Message);
-            }
+            conAttendee.Presenter = checkBox_Presenter.IsChecked.Value;             
 
             try
             {
@@ -111,6 +105,7 @@ namespace Coursework1
             txtBox_SecondName.Text = conAttendee.SecondName;
             txtBox_AttendeeRef.Text = conAttendee.AttedeeRef.ToString();
             txtBox_InstitutionName.Text = conAttendee.InstitutionName;
+            txtBox_Postcode.Text = conAttendee.InstitutionPost;
             txtBox_ConferenceName.Text = conAttendee.ConferenceName;
             comBox_RegistrationType.Text = conAttendee.RegistrationType;
             checkBox_Paid.IsChecked = conAttendee.Paid;
@@ -124,6 +119,7 @@ namespace Coursework1
             txtBox_SecondName.Text = "";
             txtBox_AttendeeRef.Text = "";
             txtBox_InstitutionName.Text = "";
+            txtBox_Postcode.Text = "";
             txtBox_ConferenceName.Text = "";
             comBox_RegistrationType.Text = "";
             checkBox_Paid.IsChecked = false;
@@ -146,16 +142,16 @@ namespace Coursework1
         private void btn_Certificate_Click(object sender, RoutedEventArgs e)
         {
             Coursework1.Certificate form = new Coursework1.Certificate();
-            if (conAttendee.Presenter == false)
+            if (conAttendee.Presenter == false)             //Message to be shown if the attendee is not a presented
             {
                 form.lbl_CerCertificate.Content = "This certificate is to show that \n" + conAttendee.FirstName + " "
                 + conAttendee.SecondName + " attended " + conAttendee.ConferenceName + ".";
             }
             else
             {
-                form.lbl_CerCertificate.Content = "This certificate is to show that \n" + conAttendee.FirstName + " "
-                + conAttendee.SecondName + " attended " + conAttendee.ConferenceName + "\n and presented a paper entitled "
-                + conAttendee.PaperTitle + ".";
+                form.lbl_CerCertificate.Content = "This certificate is to show that \n" + conAttendee.FirstName + " "           //Message to be shown when
+                + conAttendee.SecondName + " attended " + conAttendee.ConferenceName + "\n and presented a paper entitled "     //Certificate button is clicked
+                + conAttendee.PaperTitle + ".";                                                     
             }
 
             form.Show();

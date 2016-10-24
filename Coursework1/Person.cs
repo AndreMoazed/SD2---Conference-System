@@ -1,6 +1,6 @@
 ﻿//Andre Moazed - 40216327
 //This class is used as a parent class to attendee, as all people have a first name and a surname
-//10-10-16
+//24-10-16
 
 using System;
 using System.Collections.Generic;
@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 namespace Coursework1
 {
 
-    public class Person
+    public class Person     //Parent calss "Person"
     {
         private string firstName;
         private string secondName;
 
-        public string FirstName
+        public string FirstName                 //First name being declared public
         {
             get
             {

@@ -15,7 +15,7 @@
         <TextBox x:Name="txtBox_SecondName" HorizontalAlignment="Left" Height="23" Margin="398,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
         <Label x:Name="lbl_FirstName1" Content="Last Name" HorizontalAlignment="Left" Margin="303,49,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtBox_AttendeeRef" HorizontalAlignment="Left" Height="23" Margin="173,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <TextBox x:Name="txtBox_InstitutionName" HorizontalAlignment="Left" Height="23" Margin="173,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
+        <TextBox x:Name="txtBox_InstitutionName" HorizontalAlignment="Left" Height="23" Margin="173,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
         <TextBox x:Name="txtBox_ConferenceName" HorizontalAlignment="Left" Height="23" Margin="173,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196"/>
         <ComboBox x:Name="comBox_RegistrationType" HorizontalAlignment="Left" Margin="173,168,0,0" VerticalAlignment="Top" Width="196">
             <ListBoxItem Content="full"/>
@@ -30,6 +30,8 @@
         <Button x:Name="btn_Get" Content="Get" HorizontalAlignment="Left" Margin="236,287,0,0" VerticalAlignment="Top" Width="75" Click="btn_Get_Click"/>
         <Button x:Name="btn_Invoice" Content="Invoice" HorizontalAlignment="Left" Margin="329,287,0,0" VerticalAlignment="Top" Width="75" Click="btn_Invoice_Click"/>
         <Button x:Name="btn_Certificate" Content="Certificate" HorizontalAlignment="Left" Margin="422,287,0,0" VerticalAlignment="Top" Width="75" Click="btn_Certificate_Click"/>
+        <Label x:Name="lbl_Postcode" Content="Postcode" HorizontalAlignment="Left" Margin="303,102,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBox_Postcode" HorizontalAlignment="Left" Height="23" Margin="398,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

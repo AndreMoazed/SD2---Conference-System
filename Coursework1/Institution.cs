@@ -1,6 +1,6 @@
 ﻿//Andre Moazed - 40216327
 //This is a class that is associated with the atendee class, where the Name and address of an institution can be found
-//10-10-16
+//24-10-16
 
 using System;
 using System.Collections.Generic;
