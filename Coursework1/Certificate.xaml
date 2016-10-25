@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Certificate" Height="300" Width="300">
     <Grid>
-        <Label x:Name="lbl_CerCertificate" Content="" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" Height="154" Width="274"/>
+        <Label x:Name="lbl_CerCertificate" Content="" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" Height="154" Width="274" FontStyle="Italic"/>
 
     </Grid>
 </Window>
