@@ -45,3 +45,6 @@ C:\Users\Andre Moazed\Desktop\Year 2\Software Development 2\cw1\Coursework1\obj\
 C:\Users\Andre Moazed\Desktop\Year 2\Software Development 2\cw1\Coursework1\obj\Debug\Coursework1.g.resources
 C:\Users\Andre Moazed\Desktop\Year 2\Software Development 2\cw1\Coursework1\obj\Debug\Coursework1.Properties.Resources.resources
 C:\Users\Andre Moazed\Desktop\Year 2\Software Development 2\cw1\Coursework1\obj\Debug\Coursework1.csproj.GenerateResource.Cache
+C:\Users\Andre Moazed\Documents\GitHub\SD2\cw1\Coursework1\bin\Debug\Coursework1.exe.config
+C:\Users\Andre Moazed\Documents\GitHub\SD2\cw1\Coursework1\obj\Debug\Coursework1.exe
+C:\Users\Andre Moazed\Documents\GitHub\SD2\cw1\Coursework1\obj\Debug\Coursework1.pdb
